@@ -133,6 +133,8 @@ public class OperatorPractice {
 			System.out.print("annual income of C with incentive : " + C+"/"+incenC);
 		String resC = ( (incenC >= 3000 )? "more than 3000" : "less than 3000");
 			System.out.println(" and it is " + resC);	
+			System.out.println("test");
+			System.out.printf("%f", incenC);
 	}
 	
 	
