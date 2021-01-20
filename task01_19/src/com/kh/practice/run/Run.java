@@ -22,7 +22,7 @@ public class Run {
 //		arr.practice11();
 //		arr.practice12();
 //		arr.practice13();
-		arr.practice14(); // 이거 다시 풀어야됨
+//		arr.practice14(); 
 //		arr.practice15();
 //		arr.practice16();
 		
