@@ -6,7 +6,7 @@ public class Run {
 		
 //		loop.practice15();
 //		loop.practice16();
-		loop.practice17();
+//		loop.practice17();
 //		loop.practice18();
 //		loop.practice19();
 //		loop.practice20();
