@@ -10,7 +10,7 @@ public class CircleController {
 			return result;
 		}
 		
-		public String calcPerimeter(int x, int y, int radius) {
+		public String calcCircumference(int x, int y, int radius) {
 			String result = "Perimeter : ";
 			Circle cir = new Circle(x,y,radius);
 			result += cir.getRadius()*2*Math.PI;

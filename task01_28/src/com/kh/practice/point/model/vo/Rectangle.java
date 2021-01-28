@@ -34,10 +34,6 @@ public class Rectangle extends Point{
 //		System.out.printf("circumference : %.1f / area : %.1f\n", circumference,area);
 //	}
 	
-	public void draw(Point po) {
-		Rectangle other = (Rectangle) po;
-		po.draw();
-	}
 	
 	@Override
 	public String toString() {

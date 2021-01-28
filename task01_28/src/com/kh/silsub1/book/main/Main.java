@@ -9,11 +9,15 @@ public class Main {
 		Book book2 = new Book("Hound of baskerville", "Conan Doyle", 15000);
 		
 		
-		System.out.println(book1.toString());
-		System.out.println(book2.toString());
+//		System.out.println(book1.toString());
+//		System.out.println(book2.toString());
 		
 		
-		System.out.println("is it same? :" + book1.equals(book2));
+//		System.out.println("is it same? :" + book1.equals(book2));
+		String[] str = {"김","치"};
+		String[] str2 = str;
+		
+		
 		
 		Book book1Copy = book1;
 		Book book1DeepCopy = book1.deepCopy();
@@ -22,16 +26,24 @@ public class Main {
 		
 		
 		
-		System.out.println("is it same? :" + (book1 == book1Copy));
-		System.out.println("is it same? :" + (book1 == book1DeepCopy));
-		System.out.println("is title same? :" + book1.getTitle().equals(book1Copy.getTitle()));
-		System.out.println("is author same? :" + book1.getAuthor().equals(book1Copy.getAuthor()));
-		System.out.println("is price same? :" + (book1.getPrice()==book1Copy.getPrice()));
-		
+//		System.out.println("is it same? :" + (book1 == book1Copy));
+//		System.out.println("is it same? :" + (book1 == book1DeepCopy));
+//		System.out.println("is title same? :" + book1.getTitle().equals(book1Copy.getTitle()));
+//		System.out.println("is author same? :" + book1.getAuthor().equals(book1Copy.getAuthor()));
+//		System.out.println("is price same? :" + (book1.getPrice()==book1Copy.getPrice()));
+//		
 			
-		book1 = new Book("1Sign of fourth","Conan Doyle", 14500);
-		System.out.println(book1DeepCopy);
-		System.out.println(book1);
+		book1.setTitle("1");
+		System.out.println("\n title");
+		System.out.println("ori  "+book1);
+		System.out.println("copy  "+book1Copy);
+		System.out.println("deep  "+book1DeepCopy);
+		
+		
+		System.out.println("\n hashcode()!");
+		System.out.println("ori "+book1.hashCode());
+		System.out.println("copy "+ book1Copy.hashCode());
+		System.out.println("deep  "+book1DeepCopy.hashCode());
 	}
 
 }
