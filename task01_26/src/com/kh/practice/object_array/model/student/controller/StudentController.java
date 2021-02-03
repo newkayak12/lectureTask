@@ -38,17 +38,20 @@ public class StudentController {
 		return sArr;
 	}
 
-	public String printStudent()	{
+	public Student[] printStudent()	{
 		
 		
-		String result = "name\tsubject\tscore\n";
-		for(int i=0; i<sArr.length; i++) {
-			result+=sArr[i].inform();
-		}
 		
-		return  result;
+			return	sArr;
+//		}
+		
+		 
 	}
 	
+	public void setsArr(Student[] sArr) {
+		this.sArr = sArr;
+	}
+
 	public int sumScore() {
 		int total =0;
 		for( Student stu : sArr) {

@@ -8,7 +8,14 @@ public class StudentMenu {
 	
 	public StudentMenu() {
 		System.out.println("====== 학생 정보 출력 ====== ");
-		System.out.println(ssm.printStudent());
+			for(int i=0; i< ssm.getsArr().length; i++) {
+				String result = " ";
+				result += ssm.printStudent()[i].getName() +"\t";
+				
+				System.out.println(result);
+				
+			}
+			
 		System.out.println("\n====== 학생 성적 출력 ====== ");
 		System.out.println(ssm.toString());
 		System.out.println("\n====== 성적 결과 출력 ====== ");
