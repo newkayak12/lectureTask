@@ -24,7 +24,8 @@ public class Run {
 //		arr.practice13();
 //		arr.practice14(); 
 //		arr.practice15();
-//		arr.practice16();
+//		arr.practice16(); //폐기 처분
+//		arr.practice161();
 		
 		DimensionPractice di = new DimensionPractice();
 		

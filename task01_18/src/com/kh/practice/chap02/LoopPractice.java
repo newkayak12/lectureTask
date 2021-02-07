@@ -8,10 +8,20 @@ public class LoopPractice {
 	public void practice15() {
 			System.out.print("Enter any number");
 		int num = scn.nextInt();
+		boolean prime = true;
+			for( int i =2; i<num; i++ ) {
+				if(num%i ==0) {
+					prime = false;
+				}
+			}
+		
+		
+		
+		
 			if(num<2) {
 				System.out.println("invalid number");
 				
-			} else if((num%3!=0)&&(num%2!=0)) {
+			} else if(prime) {
 				System.out.println("this is a prime number");
 				
 			} else { 
@@ -24,12 +34,25 @@ public class LoopPractice {
 		boolean run = true;
 		do {
 			
+				
+			
+			
 				System.out.print("Enter any number");
 			int num = scn.nextInt();
+			
+			
+			boolean prime = true;
+			for( int i =2; i<num; i++ ) {
+				if(num%i ==0) {
+					prime = false;
+				}
+			}
+		
+			
 				if(num<2) {
 					System.out.println("invalid number");
 					
-				} else if((num%3!=0)&&(num%2!=0)) {
+				} else if(prime) {
 					System.out.println("this is a prime number");
 					
 				} else { 
@@ -54,15 +77,23 @@ public class LoopPractice {
 			System.out.print("Enter any number");
 		int num = scn.nextInt();
 			int count =0;
+			
+			boolean prime = true;
+			for( int i =2; i<num; i++ ) {
+				if(num%i ==0) {
+					prime = false;
+				}
+			}
+		
 			if(num<2) {
 				System.out.println("invalid number");
 			} else {
-				System.out.println("prime number");
 				for(int i =2; i<=num; i++) {
 					if(i==2||i==3)	{
 						System.out.println(i);
 						count++;
-					} else if((i%3!=0)&&(i%2!=0)) {
+					} else if((prime)) {
+						System.out.println("prime number");
 						System.out.println(i);
 						count++;
 					} 

@@ -309,18 +309,33 @@ public class ArrayPractice {
 //////////////////////////////////////////////////////	
 	
 	
-	
+///////////////////////////////////////////다시 풀어봅시다./////////////////////////////////	
 	
 	public void practice15() {
 			System.out.println("Enter any keyword : ");
 		String str = scn.next();
-		System.out.print("character : ");
+			System.out.print("character : ");
 		char[] ch = new char[str.length()];
+		int count = 0;
 			for(int i=0; i<str.length(); i++) {
 				ch[i] = str.charAt(i);
-				System.out.print(ch[i]+" ");
+				for(int j = 0; j<str.length(); j++) {
+					if((i!=j)&&(ch[i] == ch[j])) {
+						
+						ch[i]=' ';
+						
+					}
+					
+				}
+				if(ch[i]!=' ') {
+					System.out.print(ch[i]);
+					count++;
+					if(i!=ch.length-1) {
+						System.out.print(", ");
+					}
+				}	
 			}
-			System.out.println("\nnumber of letters : " + str.length());
+			System.out.println("\nnumber of letters : " + count);
 			
 	}
 	
@@ -373,7 +388,7 @@ public class ArrayPractice {
 		
 		
 		
-//		버퍼쓰는게 나은거 아니야??
+
 //		객체 한 번 생성하면 수정이 안되는 걸로 알고 있는데
 //		결국 새로운 객체에 복사해서 집어 넣고
 //		나머지 공간에 추가하라는 소린데
@@ -448,6 +463,45 @@ public class ArrayPractice {
 			}
 	}while(run);
 	
+	}
+	
+	
+	
+	
+	public void practice161(){
+			System.out.println("arrayLength");
+		int arrylen = scn.nextInt();
+		String[] strarr = new String[arrylen];
+			for(int i = 0; i<strarr.length; i++	) {
+					System.out.println(" enter value ");
+				String value = scn.next();
+				strarr[i] = value;
+			}
+			
+		
+		while(true) {	
+			System.out.println("more? 1.yes / 2. no");
+		int input = scn.nextInt();
+			if(input==2) {
+					for(int i =0; i<strarr.length; i++	) {
+						System.out.println(strarr[i]);
+					}
+				
+					return;
+			} else if(input == 1) {
+					System.out.println("array length");
+				int plus = scn.nextInt();
+				String[] newarr = new String[ strarr.length + plus];
+				System.arraycopy(strarr, 0, newarr, 0, strarr.length);
+				strarr = newarr;
+				newarr = null;
+					for(int i= (strarr.length)-plus; i<strarr.length; i++) {
+							System.out.println("enter value");
+							strarr[i] = scn.next();
+					}
+			}
+			
+		}	
 	}
 	
 }
