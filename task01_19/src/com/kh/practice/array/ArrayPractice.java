@@ -497,7 +497,7 @@ public class ArrayPractice {
 				newarr = null;
 					for(int i= (strarr.length)-plus; i<strarr.length; i++) {
 							System.out.println("enter value");
-							strarr[i] = scn.next();
+							strarr[i ] = scn.next();
 					}
 			}
 			
