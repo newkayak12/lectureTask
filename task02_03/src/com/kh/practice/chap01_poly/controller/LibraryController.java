@@ -18,7 +18,7 @@ public class LibraryController {
 		bList[2] = new AniBook("원피스", "오다 에이치로", "Toei", 12);
 		bList[3] = new CookBook("이혜정의 얼마나 맛있게요?", "이혜정", "문학", false);
 		bList[4] = new CookBook("최현석 날 따라해봐", "최현석", "소금북스", true);
-	}
+	};
 	// init block
 	
 	
