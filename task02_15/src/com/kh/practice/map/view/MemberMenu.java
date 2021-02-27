@@ -121,6 +121,9 @@ public class MemberMenu {
 		String keytoName =	mc.login(id, pw);
 	}
 	
+	
+	
+	
 	public void sameName() {
 			System.out.println(" name : ");
 		String name = scn.next();

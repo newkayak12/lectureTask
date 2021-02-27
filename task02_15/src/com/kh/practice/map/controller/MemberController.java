@@ -75,9 +75,13 @@ public class MemberController {
 	
 	public TreeMap sameName(String name){
 //		Set<Map.Entry<String, Member>> entry = member.entrySet();
+		
 //		Iterator<Map.Entry<String, Member>> it = entry.iterator();
+		
 //			while(it.hasNext()) {
 //				Map.Entry<String, Member> temp = it.next();
+
+		
 //					if( ((temp.getValue()).getName()).equals(name)) {
 //						result.put(temp.getKey(), temp.getValue());
 //						
@@ -86,14 +90,18 @@ public class MemberController {
 		
 		Set<String> ls = member.keySet();
 		Iterator<String> it = ls.iterator();
+		
+		
 			while(it.hasNext()) {
 				String keies = it.next();
 					if(member.get(keies).getName().equals(name)) {
 						result.put(keies, member.get(keies));
-						return (TreeMap<String,Member>) result;
+						
+						
 					}
 			}
+			return (TreeMap<String,Member>) result;
 		
-		return null;
+//		return null;
 	}
 }

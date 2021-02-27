@@ -51,6 +51,7 @@ public class MusicController {
 	public Music removeMusic(String title) {
 		for(int i = 0; i<list.size(); i++) {
 			String temp = list.get(i).getTitle();
+				
 				if(temp.equals(title)) {
 //					list.remove(i);
 					return list.get(i);
