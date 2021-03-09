@@ -1,4 +1,4 @@
-package com.test3_re;
+package workshop2.com.test3_re;
 
 public class Student {
 	private String name;
